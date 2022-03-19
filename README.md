@@ -2,20 +2,33 @@
 API written in flask and using mongodb
 
 Api reqs:
+
 Add user
+
 Get challenges
+
 Start session
+
 End session
+
 Record score
+
 Get leaderboard
 
 Basic arch:
+
 HTTP webserver to host API
+
 Flask api defining endpoints
+
 PUSH request for login (add user)
+
 PUSH request for recording score
+
 PUSH request for start session
+
 PUSH request for end session
+
 GET request for leaderboard
 
 Models:
