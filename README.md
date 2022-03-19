@@ -20,13 +20,13 @@ Basic arch:
 
 - Flask api defining endpoints
 
-- PUSH request for login (add user)
+- POST request for login (add user)
 
-- PUSH request for recording score
+- POST request for recording score
 
-- PUSH request for start session
+- POST request for start session
 
-- PUSH request for end session
+- POST request for end session
 
 - GET request for leaderboard
 
