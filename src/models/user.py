@@ -1,3 +1,4 @@
+import json
 import mongoengine
 
 class User(mongoengine.Document):
@@ -19,7 +20,8 @@ class User(mongoengine.Document):
     recorded_score = mongoengine.ListField() #this should also be stored as a list of tuples (date, score).
 
     #a list of all the challenges a user has completed
-    challenges_completed = mongoengine.ListField()
+    challenges_completed = mongoengine.EmbeddedDocumentListField()
+
 
     meta = {
         'db_alias': 'core',
